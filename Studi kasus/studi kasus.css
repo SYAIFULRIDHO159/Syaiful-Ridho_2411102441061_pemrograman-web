@@ -1,0 +1,251 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="books" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="3" height="15" x="2" y="2" fill="rgba(255,255,255,0.1)"/><rect width="3" height="12" x="6" y="5" fill="rgba(255,255,255,0.1)"/><rect width="3" height="18" x="10" y="1" fill="rgba(255,255,255,0.1)"/><rect width="3" height="14" x="14" y="3" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23books)"/></svg>');
+    opacity: 0.3;
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+/* Content Layout */
+.study-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-top: 5px solid #667eea;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.6s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card h2::before {
+    content: '📚';
+    font-size: 1.2em;
+}
+
+/* Icon variations for different card types */
+.problem h2::before { content: '❓'; }
+.solution h2::before { content: '💡'; }
+.analysis h2::before { content: '📊'; }
+.conclusion h2::before { content: '✅'; }
+
+.card p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Highlight Box */
+.highlight {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border-left: 5px solid #667eea;
+    position: relative;
+}
+
+.highlight::before {
+    content: '💎';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 1.5em;
+}
+
+/* Statistics Section */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Book Showcase */
+.book-showcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    width: 80px;
+    height: 120px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.book:nth-child(2) { background: linear-gradient(135deg, #4834d4, #686de0); }
+.book:nth-child(3) { background: linear-gradient(135deg, #00d2d3, #54a0ff); }
+.book:nth-child(4) { background: linear-gradient(135deg, #ff9ff3, #f368e0); }
+.book:nth-child(5) { background: linear-gradient(135deg, #feca57, #ff9f43); }
+
+.book::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+}
+
+.book:hover {
+    transform: translateY(-15px) rotateY(15deg);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .study-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .card {
+        padding: 25px;
+    }
+    
+    .book-showcase {
+        justify-content: center;
+    }
+}
