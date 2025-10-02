@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Instagram Responsif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-300 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-semibold">dho_xo0</h1>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-plus text-xl cursor-pointer hover:text-gray-600"></i>
+                    <i class="fas fa-heart text-xl cursor-pointer hover:text-gray-600"></i>
+                    <i class="fas fa-paper-plane text-xl cursor-pointer hover:text-gray-600"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        
+        <!-- Profile Section -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+                
+                <!-- Profile Picture -->
+                <div class="flex justify-center md:justify-start">
+                    <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-1">
+                        <div class="w-full h-full rounded-full bg-white p-1">
+                            <img src="photo/poto1.jpg" 
+                                 alt="Profile Picture" 
+                                 class="w-full h-full rounded-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="md:col-span-1 lg:col-span-3">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-2xl font-light mb-4">ridho_159?</h2>
+                        
+                        <!-- Stats -->
+                        <div class="flex justify-center md:justify-start space-x-8 mb-4">
+                            <div class="text-center">
+                                <span class="font-semibold text-lg">12</span>
+                                <p class="text-gray-600 text-sm">postingan</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-semibold text-lg">14M</span>
+                                <p class="text-gray-600 text-sm">pengikut</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-semibold text-lg">1</span>
+                                <p class="text-gray-600 text-sm">mengikuti</p>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md font-medium transition-colors">
+                                Ikuti
+                            </button>
+                            <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-6 py-2 rounded-md font-medium transition-colors">
+                                Kirim Pesan
+                            </button>
+                            <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-3 py-2 rounded-md transition-colors">
+                                <i class="fas fa-user-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio -->
+            <div class="mt-4">
+                <h3 class="font-semibold">SYAIFUL RIDHO</h3>
+                <p class="text-gray-700 mt-1">
+                    Bio yang menarik dan deskriptif tentang profil ini. 
+                    Menggunakan Tailwind CSS untuk styling responsif. 
+                    📸 Photographer | 🌍 Travel Enthusiast | 🌄 Mountaineering 
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">www.website-anda.com</a>
+            </div>
+        </div>
+
+        <!-- Highlights (Stories) -->
+        <div class="bg-white rounded-lg shadow-sm p-4 mb-8">
+            <div class="flex space-x-4 overflow-x-auto pb-2">
+                <div class="flex-shrink-0 text-center">
+                    <div class="w-16 h-16 rounded-full bg-gray-200 border-2 border-gray-300 flex items-center justify-center mb-2">
+                        <i class="fas fa-plus text-gray-500"></i>
+                    </div>
+                    <p class="text-xs text-gray-600">Baru</p>
+                </div>
+                
+                <!-- Highlight Items -->
+                <div class="flex-shrink-0 text-center">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-purple-400 to-pink-400 p-0.5 mb-2">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=80&h=80&fit=crop" 
+                             alt="Highlight" 
+                             class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <p class="text-xs text-gray-600">Travel</p>
+                </div>
+                
+                <div class="flex-shrink-0 text-center">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-400 p-0.5 mb-2">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=80&h=80&fit=crop" 
+                             alt="Highlight" 
+                             class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <p class="text-xs text-gray-600">Food</p>
+                </div>
+                
+                <div class="flex-shrink-0 text-center">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-green-400 to-blue-400 p-0.5 mb-2">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=80&h=80&fit=crop" 
+                             alt="Highlight" 
+                             class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <p class="text-xs text-gray-600">Nature</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feed Navigation -->
+        <div class="bg-white rounded-lg shadow-sm mb-4">
+            <div class="flex border-b border-gray-200">
+                <button class="flex-1 py-3 text-center border-b-2 border-black font-medium">
+                    <i class="fas fa-th-large mr-2"></i>POSTINGAN
+                </button>
+                <button class="flex-1 py-3 text-center text-gray-500 hover:text-black transition-colors">
+                    <i class="fas fa-play-circle mr-2"></i>REELS
+                </button>
+                <button class="flex-1 py-3 text-center text-gray-500 hover:text-black transition-colors">
+                    <i class="fas fa-bookmark mr-2"></i>TERSIMPAN
+                </button>
+            </div>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-4">
+            <!-- Photo 1 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="photo/post1.jpeg" 
+                         alt="Post 1" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.2k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>45
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="photo/post5.jpg" 
+                         alt="Post 2" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.4K
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="photo/post2.jpeg" 
+                         alt="Post 3" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>2.1k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>150
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop" 
+                         alt="Post 4" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>756
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>23
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop" 
+                         alt="Post 5" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.5k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>67
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="photo/post3.jpeg" 
+                         alt="Post 6" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>934
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>41
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=400&fit=crop" 
+                         alt="Post 7" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.8k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>92
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=400&h=400&fit=crop" 
+                         alt="Post 8" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.3k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>56
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 9 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=400&fit=crop" 
+                         alt="Post 9" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>2.4k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>103
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 10 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&h=400&fit=crop" 
+                         alt="Post 10" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>876
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>34
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 11 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="photo/post4.jpeg" 
+                         alt="Post 11" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.1k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>48
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 12 -->
+            <div class="aspect-square bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="relative w-full h-full">
+                    <img src="photo/post6.jpeg" 
+                         alt="Post 12" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                        <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
+                            <span class="flex items-center">
+                                <i class="fas fa-heart mr-2"></i>1.7k
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-comment mr-2"></i>85
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-300 mt-16 py-8">
+        <div class="max-w-5xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Instagram Clone. Dibuat dengan Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>
