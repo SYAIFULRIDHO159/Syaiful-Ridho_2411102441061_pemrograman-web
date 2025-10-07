@@ -1,0 +1,86 @@
+body {
+    background-color: #a7f0c5; /* Warna latar belakang hijau muda */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Wrapper untuk konten agar berada di tengah */
+#wrapper {
+    width: 80%;
+    max-width: 960px;
+    margin: 20px auto; /* Memberi jarak dari atas dan menengahkan */
+}
+
+/* Judul Utama */
+h1 {
+    text-align: left;
+    color: #333;
+}
+
+/* --- Style untuk Menu Navigasi --- */
+
+/* Menghilangkan bullet points dan margin default dari list */
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Membuat item menu utama menjadi horizontal */
+#menu > ul > li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+/* Menyembunyikan submenu (dropdown) secara default */
+#menu li ul {
+    display: none;
+    position: absolute;
+    /* Memberi jarak agar dropdown tidak menempel */
+    top: 100%; 
+    left: 0;
+}
+
+/* Style untuk semua link di dalam menu */
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    white-space: nowrap; /* Mencegah teks turun baris */
+}
+
+/* Latar belakang item menu utama */
+#menu > ul > li > a {
+    background: #2E8B57; /* Warna hijau tua seperti di gambar */
+    border-right: 1px solid #4cae7a; /* Garis pemisah tipis */
+}
+
+/* Latar belakang untuk item dropdown */
+#menu ul ul li a {
+    background: #3b3b3b; /* Warna abu-abu tua untuk dropdown */
+}
+
+
+/* --- Style untuk Hover (saat cursor mouse di atas menu) --- */
+
+/* Memunculkan dropdown saat menu utama di-hover */
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Mengubah warna background menu utama saat di-hover */
+#menu > ul > li > a:hover {
+    background: #3CB371; /* Warna hijau sedikit lebih terang */
+}
+
+/* Mengubah warna background item dropdown saat di-hover */
+#menu ul ul li a:hover {
+    background: #3CB371; /* Warna hijau terang untuk hover dropdown */
+}
+
+/* Style untuk class "active" (item yang di-highlight) */
+#menu ul ul li a.active {
+    background-color: #3CB371; /* Warna hijau terang */
+}
