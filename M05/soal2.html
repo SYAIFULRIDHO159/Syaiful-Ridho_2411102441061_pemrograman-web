@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengulangan - JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0b7dda;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .output-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Program 2: Pengulangan</h2>
+        <p>Masukkan jumlah pengulangan:</p>
+        <input type="number" id="jumlahInput" min="1" placeholder="Masukkan jumlah">
+        <button onclick="jalankanPengulangan()">Jalankan Pengulangan</button>
+        
+        <div id="hasilPengulangan" class="result" style="display: none;">
+            <!-- Hasil pengulangan akan ditampilkan di sini -->
+        </div>
+    </div>
+
+    <script>
+        function jalankanPengulangan() {
+            // Ambil jumlah dari input
+            const jumlah = parseInt(document.getElementById('jumlahInput').value);
+            const hasilDiv = document.getElementById('hasilPengulangan');
+            
+            // Validasi input
+            if (isNaN(jumlah) || jumlah < 1) {
+                alert("Masukkan jumlah yang valid (minimal 1)!");
+                return;
+            }
+            
+            // Bersihkan hasil sebelumnya
+            hasilDiv.innerHTML = '<h3>Hasil Pengulangan:</h3>';
+            
+            // Lakukan pengulangan
+            for (let i = 1; i <= jumlah; i++) {
+                const item = document.createElement('div');
+                item.className = 'output-item';
+                item.textContent = `Ini adalah tulisan ke-${i}`;
+                hasilDiv.appendChild(item);
+            }
+            
+            // Tampilkan hasil
+            hasilDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

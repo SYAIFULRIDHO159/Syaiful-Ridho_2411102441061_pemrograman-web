@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai - JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Program 1: Konversi Nilai</h2>
+        <p>Masukkan nilai (0-100):</p>
+        <input type="number" id="nilaiInput" min="0" max="100" placeholder="Masukkan nilai">
+        <button onclick="konversiNilai()">Konversi Nilai</button>
+        
+        <div id="hasilKonversi" class="result" style="display: none;">
+            <!-- Hasil akan ditampilkan di sini -->
+        </div>
+    </div>
+
+    <script>
+        function konversiNilai() {
+            // Ambil nilai dari input
+            const nilai = parseInt(document.getElementById('nilaiInput').value);
+            const hasilDiv = document.getElementById('hasilKonversi');
+            
+            // Validasi input
+            if (isNaN(nilai) || nilai < 0 || nilai > 100) {
+                alert("Masukkan nilai yang valid antara 0-100!");
+                return;
+            }
+            
+            let huruf, keterangan;
+            
+            // Seleksi nilai
+            if (nilai >= 80 && nilai <= 100) {
+                huruf = "A";
+                keterangan = "Lulus";
+            } else if (nilai >= 75 && nilai <= 79) {
+                huruf = "AB";
+                keterangan = "Lulus";
+            } else if (nilai >= 70 && nilai <= 74) {
+                huruf = "B";
+                keterangan = "Lulus";
+            } else if (nilai >= 65 && nilai <= 69) {
+                huruf = "BC";
+                keterangan = "Lulus";
+            } else if (nilai >= 60 && nilai <= 64) {
+                huruf = "C";
+                keterangan = "Lulus";
+            } else if (nilai >= 50 && nilai <= 59) {
+                huruf = "D";
+                keterangan = "Tidak Lulus";
+            } else {
+                huruf = "E";
+                keterangan = "Tidak Lulus";
+            }
+            
+            // Tampilkan hasil
+            hasilDiv.innerHTML = `
+                <h3>Hasil Konversi:</h3>
+                <p><strong>Nilai:</strong> ${nilai}</p>
+                <p><strong>Huruf:</strong> ${huruf}</p>
+                <p><strong>Keterangan:</strong> ${keterangan}</p>
+            `;
+            hasilDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
