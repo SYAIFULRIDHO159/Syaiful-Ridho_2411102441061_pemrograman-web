@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="judul"></h1>
+
+    <div class="main-container">
+        <!-- Bagian Kiri: Form Input -->
+        <div class="card form-section">
+            <h2>Input Data</h2>
+            <form id="formMahasiswa">
+                <label>Nama Lengkap:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+
+                <label>NIM:</label>
+                <input type="text" id="nim" placeholder="Masukkan NIM">
+
+                <label>Semester:</label>
+                <input type="number" id="semester" placeholder="Masukkan semester">
+
+                <label>Program Studi:</label>
+                <select id="prodi">
+                    <option value="">-- Pilih Program Studi --</option>
+                    <option value="Informatika">Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Teknik Komputer">Teknik Komputer</option>
+                    <option value="Teknologi Informasi">Teknologi Informasi</option>
+                </select>
+
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Masukkan email aktif">
+
+                <button type="button" id="btnKirim">Kirim Data</button>
+            </form>
+
+            <p id="pesan"></p>
+        </div>
+
+        <!-- Bagian Kanan: Informasi dan Tabel -->
+        <div class="card data-section">
+            <div id="infoPengiriman" class="info-card">
+                <h3> Informasi Pengiriman </h3>
+                <h4> Apa yang terjadi saat Anda klik "Kirim Data"?</h4>
+                <ul>
+                    <p> ✔️ Data ditampilkan di <strong>console</strong> browser.</p>
+                    <p> ✔️ Data disimpan ke dalam <strong>array</strong>.</p>
+                    <p> ✔️ Jumlah data <strong>di-update</strong> di tabel.</p>
+                    <p> ✔️ Form akan <strong>dikosongkan kembali</strong> setelah dikirim.</p>
+                </ul>
+                <p><em>Data terbaru juga telah ditambahkan ke tabel di bawah ini.</em></p>
+            </div>
+
+            <h2>Table Mahasiswa</h2>
+            <table id="tabelMahasiswa">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Lengkap</th>
+                        <th>Info (Program Studi & Semester)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data mahasiswa akan ditambahkan di sini -->
+                </tbody>
+            </table>
+            <p id="jumlahData">Jumlah data: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

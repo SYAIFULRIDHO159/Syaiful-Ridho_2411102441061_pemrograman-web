@@ -1,0 +1,152 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f4f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.judul {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.form-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.data-section {
+    flex: 1.5;
+    min-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #090909;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0c0c0c;
+    transform: scale(1.03);
+}
+
+#pesan {
+    text-align: center;
+    color: rgb(36, 37, 36);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.info-card {
+    background-color: #ecf9f1;
+    border-left: 5px solid #141414;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #212222;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    color: #0f100f;
+}
+
+.info-card ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#jumlahData {
+    text-align: right;
+    margin-top: 10px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data-section {
+        width: 100%;
+    }
+}
